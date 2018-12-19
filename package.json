@@ -1,0 +1,57 @@
+{
+  "name": "challenge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "cypress": "^3.1.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
+    "formik": "^1.3.1",
+    "jest": "^23.6.0",
+    "json-server": "^0.14.0",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "react-test-renderer": "^16.6.0",
+    "react-testing-library": "^5.3.1",
+    "react-text-mask": "^5.4.3",
+    "styled-components": "^4.0.2",
+    "universal-cookie": "^3.0.4"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn start:be\" \"yarn start:fe\"",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "start:be": "node server.js",
+    "start:fe": "react-scripts start",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}

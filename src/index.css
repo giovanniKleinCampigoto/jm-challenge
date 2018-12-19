@@ -1,0 +1,36 @@
+html {
+    height: 100vh;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: "#551A8B";
+}
+
+code {
+  font-family: "Helvetica",source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.root {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #885EAD 0%, #7647A2 50%, #551A8B 100%);;
+}
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
